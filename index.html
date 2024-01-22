@@ -36,7 +36,7 @@
 <body class="font">
     <!-- navbar section -->
     <div class=" mx-auto navbar ">
-            <nav class=" my-12 mx-24 my-10 mx-4 w-full whitespace-nowrap">
+            <nav class=" lg:my-12 lg:mx-24 my-10 mx-4 w-full whitespace-nowrap">
             <div class="navbar-start ">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -50,9 +50,7 @@
                     <li><a href="#">Contact</a></li>
                   </ul>
                 </div>
-              <!-- <a class="btn btn-ghost text-2xl lg:text-3xl">
-                Hockey<span class="text-orange-400">’</span>s</a> -->
-                <a class=" text-2xl lg:text-4xl font-bold" href="#">Hockey<span
+                <a class=" text-2xl lg:text-4xl font-bold" href="index.html">Hockey<span
                     class="text-orange-primary">’</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex ">
@@ -70,8 +68,43 @@
             </div>
           </div>
     </nav>
-    <main>
+    <main class="font lg:my-12 lg:mx-24">
+        <!-- carousel section starts -->
+        <section>
+            <!-- carousel slide1 -->
+            <div class="carousel w-full grid-cols-1 grid-rows-2">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
 
+                  <!-- buttons -->
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 gap-5">
+                    <a href="#slide2" class="btn bg-slate-800 btn-circle text-white">❮</a> 
+                    <a href="#slide2" class="btn  bg-slate-800 btn-circle text-white">❯</a>
+                  </div>
+
+                  <!-- bottom card -->
+                  <div class=" grid  lg:flex-col space-y-2 p-6 absolute top:24 lg:bottom-5 lg:right-5 w-full bottom-2 lg:w-2/4 h-36 rounded-2xl bg-slate-950 ">
+                    <h1 class="text-white text-2xl text-left font-extrabold">Meet all the heroes from the field</h1>
+                    <p class="text-white text-sm font-medium">There is no glory without sacrifice. There is no victory without pain. There is no hockey without heart.</p>
+                  </div>
+                </div>
+
+
+                <!-- carousel slide2  -->
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./Images/carousel-2.png" class="w-full rounded-2xl" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 gap-5">
+                    <a href="#slide1" class="btn bg-slate-800 btn-circle text-white">❮</a> 
+                    <a href="#slide1" class="btn  bg-slate-800 btn-circle text-white">❯</a>
+                  </div>
+                  <div class=" space-y-2 p-6 absolute bottom-5 right-5 bg-slate-950 w-2/4 h-36 rounded-2xl">
+                    <h1 class="text-white text-2xl text-left font-extrabold">Meet all the heroes from the field</h1>
+                    <p class="text-white text-sm font-medium">Hockey is not just a game, it’s a passion. It’s a way of life that teaches you to never give up.</p>
+                  </div>
+                </div> 
+              </div>
+        </section>
+        
     </main>
     <footer>
 
