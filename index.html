@@ -13,15 +13,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+        <!-- custom styles -->
+        <style>
+            .font{
+                font-family: 'Manrope', sans-serif; 
+            }
+        </style>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'orange-primary': '#FF4240',
+                  }
+                }
+              }
+            }
+          </script>
 </head>
-<style>
-    .font{
-        font-family: 'Manrope', sans-serif; 
-    }
-</style>
 
 <body class="font">
-    <nav>
+    <div class="flex navbar ">
+            <nav class=" my-12 mx-24 my-10 mx-4 sm:w-full whitespace-nowrap">
+            <div class="navbar-start ">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li class="text-orange-primary"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              <a class="btn btn-ghost text-2xl lg:text-4xl" >Hockey<h6 class="text-orange-primary">’</h6>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class=" flex text-center menu menu-horizontal px-1 text-base font-normal">
+                  <li class="text-orange-primary"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Pages</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            <div class="flex lg:justify-center  navbar-end ">
+                <img class="items-center mr-2 lg:mr-6" src="./Images/Frame.svg" alt="">
+              <a class="btn bg-orange-primary rounded-lg w-24 h-4/5 lg:w-36 lg:h-12 text-white font-bold">Get Ticket</a>
+            </div>
+          </div>
     </nav>
     <main>
 
