@@ -35,7 +35,7 @@
 
 <body class="font">
     <!-- navbar section -->
-    <div class=" mx-auto navbar ">
+    <div class=" mx-auto navbar bg-base-100 ">
         <nav class=" lg:my-6 lg:mx-24 my-10 mx-4 w-full whitespace-nowrap">
             <div class="navbar-start ">
                 <div class="dropdown">
@@ -76,41 +76,35 @@
     </nav>
     <main class="font lg:my-6 lg:mx-24">
         <!-- carousel section starts -->
-        <section>
-            <!-- carousel slide1 -->
-            <div class="carousel w-full grid-cols-1 grid-rows-2">
+        <section class="p-2 lg:relative">
+            <div class="carousel w-full lg:h-[500px]">
+                <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full" />
-
-                    <!-- buttons -->
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 gap-5">
-                        <a href="#slide2" class="btn bg-slate-800 btn-circle text-white">❮</a>
-                        <a href="#slide2" class="btn  bg-slate-800 btn-circle text-white">❯</a>
-                    </div>
-
-                    <!-- bottom card -->
+                    <img src="./Images/1.png" class="w-full rounded-lg" />
                     <div
-                        class=" grid  lg:flex-col space-y-2 p-6 absolute top:24 lg:bottom-5 lg:right-5 w-full bottom-2 lg:w-2/4 h-36 rounded-2xl bg-slate-950 ">
-                        <h1 class="text-white text-2xl text-left font-extrabold">Meet all the heroes from the field</h1>
-                        <p class="text-white text-sm font-medium">There is no glory without sacrifice. There is no
-                            victory without pain. There is no hockey without heart.</p>
+                        class="absolute flex gap-4 lg:justify-start justify-center lg:bottom-5 bottom-2 left-5 right-5">
+                        <a href="#slide2" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❮</a>
+                        <a href="#slide2" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❯</a>
                     </div>
                 </div>
-
-
-                <!-- carousel slide2  -->
+                <!-- slide 2 -->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <img src="./Images/carousel-2.png" class="w-full rounded-2xl" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 gap-5">
-                        <a href="#slide1" class="btn bg-slate-800 btn-circle text-white">❮</a>
-                        <a href="#slide1" class="btn  bg-slate-800 btn-circle text-white">❯</a>
-                    </div>
-                    <div class=" space-y-2 p-6 absolute bottom-5 right-5 bg-slate-950 w-2/4 h-36 rounded-2xl">
-                        <h1 class="text-white text-2xl text-left font-extrabold">Meet all the heroes from the field</h1>
-                        <p class="text-white text-sm font-medium">Hockey is not just a game, it’s a passion. It’s a way
-                            of life that teaches you to never give up.</p>
+                    <img src="./Images/carousel1-PhotoRoom.jpg" class="w-full rounded-lg" />
+                    <div
+                        class="absolute flex gap-4 lg:justify-start justify-center lg:bottom-5 bottom-2 left-5 right-5">
+                        <a href="#slide1" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❮</a>
+                        <a href="#slide1" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❯</a>
                     </div>
                 </div>
+                
+            </div>
+            <!-- bottom cards section -->
+            <div
+                class="bg-[#131318] rounded-lg text-white lg:p-8 p-4 lg:space-y-4 space-y-2 lg:w-[500px] w-full lg:absolute bottom-8 right-8">
+                <h3 class="lg:text-2xl text-lg font-extrabold">Meet all the heroes from the field</h3>
+                <p class="lg:text-base text-sm font-medium">Hockey is not just a game, it's a passion. It's a way
+                    of life that teaches you to never give up.
+                </p>
             </div>
         </section>
 
@@ -135,7 +129,7 @@
                     <div class="radial-progress bg-transparent text-[#49D293] mb-7" style="--value:95;"
                         role="progressbar">
                         <p class="text-black text-xl font-extrabold">95%</p>
-                    </div>
+                        </div>
                     <h3 class="font-medium text-[20px] mb-6">Experienced Coach</h3>
                     <p class="font-normal mx-auto w-3/4 lg:w-52 text-center">Our club is proud to have a good coach who has the experience, knowledge, and skills.</p>
                 </div>
@@ -156,6 +150,60 @@
                     </div>
                     <h3 class="font-medium text-[20px] mb-6">Training Ground</h3>
                     <p class="font-normal mx-auto w-3/4 lg:w-52 text-center lg:text-left">Our club has a good training ground with equipments, and environment to train effectively and efficiently.</p>
+                </div>
+            </div>
+        </section>
+
+          <!--  program section -->
+          <section class="  mb-20">
+            <div class=" space-y-6  mb-20">
+                <h3 class="text-2xl lg:text-4xl font-extrabold text-center">Program Sections</h3>
+                <p class="font-medium w-4/5 lg:w-[600px] mx-auto ">This club delivers coaching, youth development, fan involvement, and community outreach activities.</p>
+            </div>
+            <div class="container gap-6 mx-auto flex justify-center flex-col lg:flex-row">
+
+                <!-- card 1 -->
+                <div class=" card w-full px-3 lg:px-0 lg:w-[573px] bg-base-100 shadow-xl image-full">
+                    <figure><img src="Images/2.png" alt="Shoes" /></figure>
+                    <div class="card-body space-y-4">
+                        <div class="lg:mt-24">
+                            <h2 class="text-3xl font-extrabold text-white mb-4">Junior Program</h2>
+                            <p class="font-medium text-white">The junior program supports young talent, presenting elite coaching, skill growth, and an opportunity to pro play, setting a strong foundation.</p>
+                        </div>
+                        <div class="card-actions justify-start">
+                            <button class="bg-[#FF4240] text-white px-6 py-3 rounded-lg font-bold">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class=" card w-full px-3 lg:px-0 lg:w-[573px] bg-base-100 shadow-xl image-full">
+                    <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                    <div class="card-body space-y-4">
+                        <div class="lg:mt-24">
+                            <h2 class="text-3xl font-extrabold text-white mb-4">Teenager Program</h2>
+                            <p class="font-medium text-white">The Teenager Program empowers young players, providing them with high-quality coaching, skill development, and exposure to professional opportunities, preparing them for a bright future in hockey.</p>
+                        </div>
+                        <div class="card-actions justify-start">
+                            <button class="bg-[#FF4240] text-white px-6 py-3 rounded-lg font-bold">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- card 3 -->
+            <div class="mx-auto mt-6 card w-full px-3 lg:px-0 lg:w-[950px] lg:h-[450px] hbg-base-100 shadow-xl image-full col-span-2">
+                <figure><img src="Images/4.png" alt="" /></figure>
+                <div class="card-body space-y-4">
+                    <div class="lg:mt-56">
+                        <h2 class="text-3xl font-extrabold text-white mb-4">Professional Program</h2>
+                        <p class="font-medium text-white w-11/12">The Professional Program is an excellent program that coaches players for a career in hockey, giving them with high-quality coaching, skill enhancement, and connection to professional possibilities.</p>
+                    </div>
+                    <div class="card-actions justify-start">
+                        <button class="bg-[#FF4240] text-white px-6 py-3 rounded-lg font-bold">Register Now!</button>
+                    </div>
                 </div>
             </div>
         </section>
